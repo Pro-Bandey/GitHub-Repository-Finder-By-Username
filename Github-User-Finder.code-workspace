@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Github-User-Finder"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "GitHub-Repository-Finder-By-Username"
+	}
+}
