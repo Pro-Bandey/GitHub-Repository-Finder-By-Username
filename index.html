@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="shortcut icon" href="github-mark.png" type="image/x-icon">
+
   <title>GitHub Repositories Viewer</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,27 +20,38 @@
       <div class="col-md-8 col-lg-6">
         <div class="box-container">
           <img src="github-mark.png" alt="GitHub Logo" class="logo mb-4 d-block mx-auto">
-          <h1 class="mb-4">GitHub Repositories Viewer</h1>
-          <form id="githubForm">
-            <div class="form-group">
-              <input type="text" autocomplete="on" class="form-control" id="username"
-                placeholder="Enter GitHub Username">
+          <h1 class="mb-4 text-center">GitHub Viewer</h1>
+
+          <form id="githubForm" autocomplete="off">
+            <div class="form-group position-relative">
+              <input type="text" class="form-control" id="username" placeholder="Enter GitHub Username">
+              <!-- Autocomplete Dropdown -->
+              <div id="autocomplete-list" class="autocomplete-items"></div>
             </div>
-            <button type="button" class="btn btn-gh-green btn-block" onclick="fetchRepositories()">Fetch
-              Repositories</button>
+
+            <!-- Recent History -->
+            <div id="recent-history" class="mb-3" style="display:none;">
+              <small class="text-muted">Recent Searches:</small>
+              <div id="history-badges"></div>
+            </div>
+
+            <button type="submit" class="btn btn-gh-green btn-block">Fetch Repositories</button>
           </form>
         </div>
       </div>
     </div>
   </div>
-  <footer>
-    © 2025 <b>MicroResearch Corporation®</b>. All Rights Reserved.
-    <br>
-    Made with ❤ by <b>M Ramzan Ch</b> 
+  <footer style="width:-webkit-fill-available; text-align:center;">
+    &COPY; 2025 <a href="https://github.com/MicroResearch-Corporation/"
+      style="text-decoration:none; color:var(--accent); "
+      data-toast-title="MicroResearch Corporation GitHub">MicroResearch Corporation&reg;</a>. All Rights
+    Reserved.<br>
+    Made with 💓 by <a aria-label="Visit M Ramzan Ch" href="https://mramzanch.blogspot.com/" title="M Ramzan Ch Blog"
+      style="text-decoration:none; color:var(--accent); "> M
+      Ramzan Ch</a>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="results.js"></script>
   <script src="script.js"></script>
 </body>
 
