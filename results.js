@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     data: Object.values(languages),
                     backgroundColor: [
-                        '#f1e05a', '#e34c26', '#563d7c', '#2b7489', '#438eff', '#f0db4f'
+                        '#f1e05a', '#e34c26', '#563d7c', '#2b7489', '#438eff','#f0941c', '#e32626', '#3f7c3d', '#892b84', '#001aff'
                     ],
                     borderWidth: 0
                 }]
